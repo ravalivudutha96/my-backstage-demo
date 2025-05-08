@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install dependencies
+    init: yarn install
+    command: yarn dev
+
+ports:
+  - port: 7007
+    onOpen: open-preview
+    visibility: public
+
